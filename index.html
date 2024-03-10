@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YuyaKito'sPortfolio</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- グーグルフォントのリンク -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!-- font-awesomeのリンク -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-body text-white font-poppins pb-12">
+  <!-- ----------------------------------
+        ナビゲーションバー
+  -----------------------------------  -->
+  <header class="py-6">
+    <div class="flex justify-between items-center px-8 md:px-16 lg:px-24">
+      <!-- タイトル -->
+      <a href="#home" class="text-2xl">YuyaKito'sPortfolio</a>
+
+      <!-- ハンバーガーメニュー -->
+      <nav>
+        <button id="button" type="button" class="fixed z-10 top-6 right-10">
+          <!-- ハンバーガー -->
+          <div id="bars"><i class="fa-solid fa-bars fa-2x"></i></div>
+          <div id="xmark" class="hidden"><i class="fa-solid fa-xmark fa-2x"></i></div>
+        </button>
+
+        <!-- メニュー -->
+        <ul id="menu" class="fixed top-0 left-0 w-full text-center bg-blue-500 font-bold translate-x-full">
+          <li class="p-6 border-b-2"><a href="#AboutMe">自己紹介</a></li>
+          <li class="p-6 border-b-2"><a href="#portfolio">ポートフォリオ</a></li>
+          <li class="p-6 border-b-2"><a href="#skills">スキル</a></li>
+          <li class="p-6 border-b-2"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ----------------------------------
+        ヒーローセクション
+  -----------------------------------  -->
+  <main>
+    <div id="home" class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <div class="md:my-36 lg:ml-14 flex flex-wrap justify-center md:justify-start max-w-lg">
+          <h1 class="font-bold text-5xl text-center md:text-left md :text-4xl lg:text-5xl">
+            エンジニアとして <br>
+            Webサイト <br>
+            アプリを作ります
+          </h1>
+          <button class="px-8 py-4 bg-theme font-bold rounded-lg mt-10 hover:bg-purple-600 transition-all duration-300">
+            <i class="fa-solid fa-paper-plane mr-1"></i>
+            <span>もっと見る</span>
+          </button>
+        </div>
+        <img src="./src/images/square.jpeg" alt="image"
+          class="md:absolute lg:top-2 lg-right-52 md:w-3/5 w-10/12 md:mt-4 right-6 mx-auto -z-10 lg:w-3/6">
+      </div>
+    </div>
+
+    <!-- ----------------------------------
+        自己紹介セクション
+  -----------------------------------  -->
+    <div id="AboutMe"
+      class="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 class="secondary-title">自己紹介</h2>
+        <p class="section-paragraph">
+          名前・学歴・資格・職歴
+        </p>
+        <div class="w-full grid gap-8 lg:grid-cols-2 lg:gap-32 mt-16">
+          <!-- 実写画像 -->
+          <div class="space-y-12">
+            <img src="./src/images/myphoto_new.jpeg" alt="自分の画像" class="rounded-xl">
+            <div class="mt-20 space-x-10 content-center">
+              <a href="#">
+                <i class="fa-brands fa-square-twitter text-3xl text-blue-300"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-square-instagram text-3xl text-pink-400"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook text-3xl text-blue-600"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-left text-2xl font-poppins font-bold">
+            <h3 class="tertiary-title mb-8">履歴</h3>
+            <!-- 名前 -->
+            <div class="mb-8">
+              <ul>
+                <li>名前 : </li>
+                <li>YuyaKito</li>
+              </ul>
+            </div>
+            <!-- 学歴 -->
+            <div class="mb-8">
+              <ul>
+                <li>学歴 : </li>
+                <li>・2017.3 愛知県立中村高等学校普通科 卒業</li>
+                <li>・2021.3 中央大学法学部法律学科 卒業</li>
+              </ul>
+            </div>
+            <!-- 資格 -->
+            <div class="mb-8">
+              <ul>
+                <li>資格 : </li>
+                <li>・基本情報技術者 合格</li>
+                <li>・ITパスポート 合格</li>
+                <li>・普通自動車第一種運転免許（AT限定）</li>
+                <li>・日商簿記検定３級</li>
+              </ul>
+            </div>
+            <!-- 職歴 -->
+            <div class="mb-8">
+              <ul>
+                <li>職歴 : </li>
+                <li>・2020.10~2021.4 たかの司法書士事務所</li>
+              </ul>
+            </div>
+            <!-- 現在 -->
+            <div class="mb-8">
+              <ul>
+                <li>その後 : </li>
+                <li>・2021.5~ 法律系以外の道の模索 </li>
+                <li>・現在 フロントエンドエンジニアを目指し、学習中 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ----------------------------------
+        ポートフォリオセクション
+  -----------------------------------  -->
+    <div id="portfolio" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 class="secondary-title">ポートフォリオ</h2>
+        <p class="section-paragraph">
+          Webアプリケーション : クリックで作品を見れます。
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <a href="https://yuya526.github.io/portfolio_quiz.app/">
+            <img src="./src/images/ss_quizapp.png" alt="quizapp"
+              class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer button-hop">
+          </a>
+          <a href="https://yuya526.github.io/portfolio_todo/">
+            <img src="./src/images/ss_todoapp.png" alt="todoapp"
+              class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer button-hop">
+          </a>
+          <!-- 
+          <img src="" alt="" class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer">
+          <img src="" alt="" class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer">
+          <img src="" alt="" class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer">
+          <img src="" alt="" class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"> 
+          -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ----------------------------------
+        スキルスタック
+  -----------------------------------  -->
+    <div id="skills" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 class="secondary-title">スキルスタック</h2>
+        <p class="section-paragraph">
+          私は以下のプログラミング言語を学んできました
+        </p>
+        <!-- JavaScript -->
+        <div class="my-16">
+          <div
+            class="w-full border border-purple-500 p-16 lg:px-32 lg:py-20 flex flex-wrap justify-center lg:justify-start lg:space-x-32 hover:border-yellow-300  transition-all duration-300 cursol-pointer">
+            <!-- javaScriptのロゴ  1 -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-square-js text-9xl text-yellow-300"></i>
+            </div>
+            <!-- JavaScriptの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+              <h3 class="text-3xl font-semibold">JavaScript</h3>
+              <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">Webサイト制作</div>
+                <div class="badge">フロントエンド開発</div>
+              </div>
+              <p class="text-secondary">
+                フロントエンド開発<br>
+                React・Nodeも学習中
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- HTML&CSS -->
+        <div class="my-16">
+          <div
+            class="w-full border border-purple-500 p-16 lg:px-32 lg:py-20 flex flex-wrap justify-center lg:justify-start lg:space-x-32 hover:border-orange-400  transition-all duration-300 cursol-pointer">
+            <!-- HTML&CSSのロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-html5 text-9xl text-orange-400"></i>
+            </div>
+            <!-- HTML&CSSの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+              <h3 class="text-3xl font-semibold">HTML&CSS</h3>
+              <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">Webサイト制作</div>
+                <div class="badge">フロントエンド開発</div>
+              </div>
+              <p class="text-secondary">
+                Webサイトの制作やデザイン <br>
+                bootstrap・tailwind.cssも含む
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ----------------------------------
+        お問い合わせセクション
+  -----------------------------------  -->
+  <div id="contact"
+    class="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+      <h2 class="secondary-title">お問い合わせ</h2>
+      <p class="section-paragraph">
+        その他、ご連絡ください。
+      </p>
+
+      <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+        <form method="post" action="https://api.staticforms.xyz/submit" class="space-y-12">
+          <!-- static formsのURL -->
+          <input type="hidden" name="accessKey" value="a90a3794-ad14-4fca-9c2d-69b80a88486b">
+          <!-- Required -->
+
+          <div>
+            <label class="text-white block mb-6 text-xl font-bold">お名前</label>
+            <input type="text" class="w-full border border-inputBorder bg-input px-4 py-4" name="name">
+          </div>
+
+          <div>
+            <label class="text-white block mb-6 text-xl font-bold">メールアドレス</label>
+            <input type="email" class="w-full border border-inputBorder bg-input px-4 py-4" name="email">
+          </div>
+
+          <div>
+            <label class="text-white block mb-6 text-xl font-bold">メッセージ</label>
+            <textarea cols="30" rows="10" type="text" name="message" id="message" placeholder="メッセージはこちら"
+              class="w-full border border-inputBorder bg-input px-4 py-4">
+            </textarea>
+          </div>
+
+          <button type="submit"
+            class="px-8 py-3 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300" value="送信">
+            送信する
+          </button>
+        </form>
+        <div>
+          <h3 class="tertiary-title mb-8">連絡先</h3>
+          <!-- 連絡先 -->
+          <p class="text-secondary">012-3456-7890(仮)</p>
+          <a href="mailto:engineer.yuya526@gmail.com">engineer.yuya526@gmail.com</a>
+          <!-- sns -->
+          <div class="mt-20 space-x-6">
+            <a href="#">
+              <i class="fa-brands fa-square-twitter text-3xl text-blue-300"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-instagram text-3xl text-pink-400"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook text-3xl text-blue-600"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
